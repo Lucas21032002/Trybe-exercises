@@ -43,3 +43,19 @@ function indiceDoMaior(numeros){
 }
 
 console.log(indiceDoMaior([2, 4, 5, 7, 10]));
+
+
+//Exercicio 3//
+
+function indiceDoMenor(numeros){
+    let indiceMenor = 0;
+    for(let indice in numeros){
+        if(numeros[indiceMenor] > numeros[indice]){
+            indiceMenor = indice
+        }
+    }
+    return indiceMenor;
+}
+
+console.log(indiceDoMenor([2, 4, 5, 7, 10]));
+
