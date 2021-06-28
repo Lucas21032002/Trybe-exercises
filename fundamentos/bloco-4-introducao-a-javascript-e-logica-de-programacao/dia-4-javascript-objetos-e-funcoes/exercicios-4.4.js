@@ -17,7 +17,7 @@ for(let key in info){
 }
 
 // PARTE 2 FUNCOES//
-
+//Exercicio 1//
 function verificaPalindrome(palavra){
     let reverse = palavra.split('').reverse().join('');
     if(reverse === palavra){
@@ -28,3 +28,18 @@ function verificaPalindrome(palavra){
 }
 
 verificaPalindrome('ovo');
+
+
+//Exercicio 2//
+
+function indiceDoMaior(numeros){
+    let indiceMaior = 0;
+    for(let indice in numeros){
+        if(numeros[indiceMaior] < numeros[indice]){
+            indiceMaior = indice
+        }
+    }
+    return indiceMaior;
+}
+
+console.log(indiceDoMaior([2, 4, 5, 7, 10]));
